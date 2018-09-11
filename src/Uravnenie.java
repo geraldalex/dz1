@@ -1,5 +1,12 @@
-public class Dz1 {
+import java.util.Scanner;
+
+public class Uravnenie {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double a  = sc.nextDouble();
+        double b  = sc.nextDouble();
+        double c  = sc.nextDouble();
+        quation(a,b,c);
 
     }
 
@@ -8,7 +15,7 @@ public class Dz1 {
         if(D>0){
             double x1 = (-b + Math.sqrt(D))/(2*a);
             double x2 = (-b - Math.sqrt(D))/(2*a);
-            System.out.println("Корни квадратного уравнения" + x1 + " " + x2);
+            System.out.println("Корни квадратного уравнения " + x1 + "    " + x2);
         }else if (D==0){
             double x = (-b)/(2*a);
             System.out.println("Корень квадратного уравнения" + x);
